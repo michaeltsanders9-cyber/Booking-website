@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>VontaeDetails | Mobile, Alabama</title>
+<style>
+:root{--red:#e32636;--red2:#a80f20;--blue:#102b55;--blue2:#173d70;--purple:#542078;--purple2:#321044;--black:#07070c;--panel:#14101c;--muted:#b4aabd;--white:#f7f9fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#070d18ed;border-bottom:1px solid #24334a;backdrop-filter:blur(12px)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:1.5px;font-size:1.15rem}.brand b{color:var(--red)}.links{display:flex;gap:25px;color:#ddd;font-size:.92rem}.links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:white;padding:13px 20px;border-radius:7px;font-weight:800;border:0;cursor:pointer;transition:.2s}.btn:hover{background:#ff3949;transform:translateY(-2px)}.btn.outline{background:transparent;border:1px solid #555}.btn.outline:hover{border-color:var(--red);color:#fff}
+.hero{position:relative;overflow:hidden;padding:100px 0 90px;background:radial-gradient(ellipse at 78% 42%,#542078 0,transparent 34%),radial-gradient(ellipse at 18% 88%,#4b1018 0,transparent 34%),radial-gradient(ellipse at 55% 100%,#102b55 0,transparent 42%),linear-gradient(120deg,#07070c 45%,#0c1020)}
+.hero:after{content:"";position:absolute;right:-110px;top:30px;width:520px;height:520px;border:1px solid #e3263638;border-radius:50%;box-shadow:0 0 0 45px #54207818,0 0 0 95px #e3263608}
+.hero-content{position:relative;z-index:1;max-width:680px}.eyebrow{color:#ff5966;text-transform:uppercase;letter-spacing:3px;font-size:.78rem;font-weight:800}.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);line-height:.98;margin:18px 0 22px;letter-spacing:-2px}.hero h1 span{color:var(--red)}.hero p{color:#c7c7c7;max-width:570px;font-size:1.1rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.trust{display:flex;gap:26px;flex-wrap:wrap;margin-top:40px;color:#ddd;font-size:.9rem}.trust span:before{content:"✓";color:var(--red);font-weight:900;margin-right:8px}
+section{padding:78px 0}.section-head{max-width:650px;margin-bottom:35px}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:8px 0 12px}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#21152c,#111722 58%,#191020);border:1px solid #493052;border-radius:13px;padding:25px}.card .num{color:var(--red);font-weight:900;font-size:.8rem;letter-spacing:2px}.card h3{margin:12px 0 8px}.card p{color:var(--muted);margin:0}
+.tracker-section{background:linear-gradient(135deg,#171023,#0b1423 52%,#101010);border-top:1px solid #3b294b;border-bottom:1px solid #24334a}.tracker-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}.tracker,.admin{background:linear-gradient(145deg,#1b1426,#111b2b);border:1px solid #493052;border-radius:14px;padding:26px}.live{display:inline-flex;align-items:center;gap:8px;color:#ff6874;font-size:.8rem;font-weight:800;letter-spacing:1px}.dot{width:8px;height:8px;border-radius:50%;background:#ef3340;box-shadow:0 0 12px #ef3340}
+.statusline{display:flex;gap:14px;margin:24px 0}.status-icon{width:42px;height:42px;flex:none;border-radius:10px;background:#172f52;color:#ff6874;display:grid;place-items:center;font-size:1.2rem}.statusline h3{margin:0 0 4px;font-size:1.05rem}.statusline p{margin:0;color:#bbb}.updated{font-size:.78rem;color:#888;margin-top:18px;border-top:1px solid #333;padding-top:15px}
+.admin{margin-top:18px}.admin h3{margin-top:0}.admin label{display:block;color:#ccc;font-size:.83rem;margin:12px 0 6px}.admin input,.admin select,.admin textarea{width:100%;background:#080f1b;border:1px solid #3a4b65;color:white;border-radius:7px;padding:11px;font:inherit}.admin textarea{min-height:76px;resize:vertical}.admin .btn{margin-top:14px;width:100%}.hint{font-size:.78rem;color:#888;margin:10px 0 0}
+.location-box{background:linear-gradient(135deg,#321044 0%,#102b55 58%,#180d16 100%);border:1px solid #60346d;border-radius:14px;padding:26px}.location-box h3{font-size:1.5rem;margin:8px 0}.location-box p{color:#c3c3c3}.service-area{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.chip{border:1px solid #60416d;border-radius:30px;padding:7px 12px;color:#ddd;font-size:.82rem}
+.contact{background:linear-gradient(110deg,#09090f 0%,#321044 34%,#102b55 62%,#b91427 100%);padding:55px 0}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}.contact h2{font-size:clamp(2rem,4vw,3rem);margin:0}.contact p{margin:5px 0 0;color:#ffe3e5}.contact .btn{background:#080f1b}.contact .btn:hover{background:#173d70}
+footer{padding:28px 0;color:#888;font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.links{display:none}.hero{padding:75px 0}.cards,.tracker-grid{grid-template-columns:1fr}.hero:after{right:-320px}.contact-inner{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><b>VONTAE</b>DETAILS</a>
+  <nav class="links"><a href="#services">Services</a><a href="#tracker">Vehicle updates</a><a href="#location">Service area</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="tel:+12515550148">Call now</a>
+</div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="hero-content">
+  <div class="eyebrow">Mobile, Alabama · Mobile detailing</div>
+  <h1>DRIVE CLEAN.<br><span>FEEL THE DIFFERENCE.</span></h1>
+  <p>Professional auto detailing that brings the clean to you. Give your vehicle the attention it deserves with a smooth, refreshed finish inside and out.</p>
+  <div class="actions"><a class="btn" href="tel:+12515550148">Call (251) 555-0148</a><a class="btn outline" href="#services">Explore services</a></div>
+  <div class="trust"><span>Convenient mobile service</span><span>Interior & exterior care</span><span>Local to Mobile, AL</span></div>
+</div></div></section>
+<section id="services"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Detailing services</div><h2>A cleaner ride starts here.</h2><p>Choose the level of care your vehicle needs. Contact us for a quote and appointment availability.</p></div>
+  <div class="cards">
+    <article class="card"><div class="num">01 / INTERIOR</div><h3>Interior Refresh</h3><p>Vacuuming, wipe-down, surface cleaning, and attention to the details that make your cabin feel fresh.</p></article>
+    <article class="card"><div class="num">02 / EXTERIOR</div><h3>Exterior Detail</h3><p>Hand wash, wheel and tire cleaning, and a careful finish to bring back a clean, polished look.</p></article>
+    <article class="card"><div class="num">03 / COMPLETE</div><h3>Full Detail</h3><p>Interior and exterior care in one complete service. Ask about add-ons and vehicle-specific pricing.</p></article>
+  </div>
+</div></section>
+<section class="tracker-section" id="tracker"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Customer vehicle tracker</div><h2>Stay in the loop.</h2><p>Check the latest service status and location message while your vehicle is being detailed.</p></div>
+  <div class="tracker-grid">
+    <div class="tracker">
+      <div class="live"><span class="dot"></span> SERVICE UPDATE</div>
+      <div class="statusline"><div class="status-icon">✦</div><div><h3 id="customerStatus">Detailing in progress</h3><p id="customerMessage">Your vehicle is being carefully cleaned. We’ll post another update as work progresses.</p></div></div>
+      <div class="statusline"><div class="status-icon">⌖</div><div><h3>Location update</h3><p id="customerLocation">Technician is at the scheduled service location in Mobile, AL.</p></div></div>
+      <div class="updated">Last updated: <span id="updatedAt">Awaiting first update</span></div>
+    </div>
+    <div>
+      <div class="location-box" id="location"><div class="eyebrow">Local service area</div><h3>Mobile, Alabama</h3><p>Mobile detailing throughout Mobile and nearby communities. Call to confirm service availability at your address.</p><div class="service-area"><span class="chip">Mobile</span><span class="chip">West Mobile</span><span class="chip">Saraland</span><span class="chip">Daphne · by request</span></div></div>
+      <div class="admin">
+        <h3>Owner update panel</h3>
+        <p class="hint">Demo control: enter an update and select “Publish update” to change what customers see on this device.</p>
+        <label for="statusInput">Service status</label>
+        <select id="statusInput"><option>Appointment confirmed</option><option>Technician en route</option><option>Arrived at location</option><option>Detailing in progress</option><option>Final inspection</option><option>Service complete</option></select>
+        <label for="messageInput">Status message</label><textarea id="messageInput">Your vehicle is being carefully cleaned. We’ll post another update as work progresses.</textarea>
+        <label for="locationInput">Location update message</label><input id="locationInput" value="Technician is at the scheduled service location in Mobile, AL.">
+        <button class="btn" id="publishBtn">Publish update</button>
+        <p class="hint">This is a front-end demo. Updates are saved in this browser only; a live multi-customer tracker needs a secure database and admin login.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+<section><div class="wrap"><div class="section-head"><div class="eyebrow">Why Redline</div><h2>Convenience without cutting corners.</h2><p>We come to your location, communicate clearly, and treat every vehicle with care.</p></div><div class="cards">
+  <article class="card"><div class="num">01</div><h3>We come to you</h3><p>Mobile service makes it easier to fit vehicle care into your day.</p></article>
+  <article class="card"><div class="num">02</div><h3>Clear communication</h3><p>Get service progress and location messages as your appointment moves along.</p></article>
+  <article class="card"><div class="num">03</div><h3>Careful finish</h3><p>Thoughtful cleaning with attention to the interior and exterior details.</p></article>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-inner"><div><h2>Ready for that fresh-car feeling?</h2><p>Call to request a quote or schedule your detail in Mobile, Alabama.</p></div><a class="btn" href="tel:+12515550148">Call (251) 555-0148</a></div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> VontaeDetails · Mobile, AL</span><span>Locally focused. Detail driven.</span></div></footer>
+<script>
+const $ = id => document.getElementById(id);
+$('year').textContent = new Date().getFullYear();
+const saved = localStorage.getItem('vontaeDetailsUpdates');
+if(saved){try{const d=JSON.parse(saved);$('customerStatus').textContent=d.status;$('customerMessage').textContent=d.message;$('customerLocation').textContent=d.location;$('updatedAt').textContent=d.time;$('statusInput').value=d.status;$('messageInput').value=d.message;$('locationInput').value=d.location;}catch(e){}}
+$('publishBtn').addEventListener('click',()=>{
+ const d={status:$('statusInput').value,message:$('messageInput').value.trim(),location:$('locationInput').value.trim(),time:new Date().toLocaleString()};
+ if(!d.message||!d.location){alert('Please enter both a status message and a location update.');return;}
+ $('customerStatus').textContent=d.status;$('customerMessage').textContent=d.message;$('customerLocation').textContent=d.location;$('updatedAt').textContent=d.time;
+ localStorage.setItem('vontaeDetailsUpdates',JSON.stringify(d));
+});
+</script>
+</body>
+</html>
